@@ -1,0 +1,23 @@
+services:
+  server:
+    build: ./server
+    container_name: matrix_server
+    ports:
+      - "5000:5000"
+      - "5678:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+
+  client:
+    build: ./client
+    container_name: matrix_client
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1

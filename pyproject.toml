@@ -1,0 +1,12 @@
+[project]
+name = "av3-compparal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9,<3.12"
+dependencies = [
+    "flask==2.0.1",
+    "numpy==1.21.0",
+    "requests==2.32.3",
+    "werkzeug==2.0.1",
+]
