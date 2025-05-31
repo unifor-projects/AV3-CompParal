@@ -2,12 +2,87 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Python: Remote Attach",
+      "name": "Python: Remote Attach (Server 1)",
       "type": "debugpy",
       "request": "attach",
       "connect": {
         "host": "localhost",
         "port": 5678
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/server",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "Python: Remote Attach (Server 2)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5679
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/server",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "Python: Remote Attach (Server 3)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5680
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/server",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "Python: Remote Attach (Server 4)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5681
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/server",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "Python: Remote Attach (Server 5)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5682
+      },
+      "pathMappings": [
+        {
+          "localRoot": "${workspaceFolder}/server",
+          "remoteRoot": "/app"
+        }
+      ]
+    },
+    {
+      "name": "Python: Remote Attach (Server 6)",
+      "type": "debugpy",
+      "request": "attach",
+      "connect": {
+        "host": "localhost",
+        "port": 5683
       },
       "pathMappings": [
         {

@@ -1,0 +1,4 @@
+Tamanho da matriz: 300x300
+Tempo serial: 10.0260 segundos
+Tempo distribuído: 11.4855 segundos
+Speedup: 0.8729x

@@ -1,0 +1,4 @@
+Tamanho da matriz: 900x900
+Tempo serial: 341.8680 segundos
+Tempo distribuído: 343.7598 segundos
+Speedup: 0.9945x

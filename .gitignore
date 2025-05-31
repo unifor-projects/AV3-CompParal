@@ -174,4 +174,4 @@ cython_debug/
 .pypirc
 
 output/*
-!output/comparison_*.txt
+!output/result*.txt

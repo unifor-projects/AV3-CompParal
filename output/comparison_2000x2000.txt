@@ -1,8 +1,0 @@
-Comparação entre multiplicação serial e paralela
-==================================================
-
-Tamanho das matrizes: 2000x2000
-
-Tempo serial: 14.5248 segundos
-Tempo paralelo: 9.2796 segundos
-Speedup: 1.57x

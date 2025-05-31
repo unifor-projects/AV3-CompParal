@@ -1,0 +1,4 @@
+Tamanho da matriz: 1100x1100
+Tempo serial: 627.2624 segundos
+Tempo distribuído: 625.4124 segundos
+Speedup: 1.0030x

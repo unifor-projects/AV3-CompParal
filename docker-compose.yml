@@ -1,21 +1,92 @@
 services:
-  server:
+  server1:
     build: ./server
-    container_name: matrix_server
+    container_name: matrix_server_1
     ports:
-      - "5000:5000"
+      - "5001:5000"
       - "5678:5678"
     volumes:
       - ./server:/app
       - ./output:/app/output
     environment:
       - PYTHONUNBUFFERED=1
+      - SERVER_ID=1
+
+  server2:
+    build: ./server
+    container_name: matrix_server_2
+    ports:
+      - "5002:5000"
+      - "5679:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_ID=2
+
+  server3:
+    build: ./server
+    container_name: matrix_server_3
+    ports:
+      - "5003:5000"
+      - "5680:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_ID=3
+
+  server4:
+    build: ./server
+    container_name: matrix_server_4
+    ports:
+      - "5004:5000"
+      - "5681:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_ID=4
+
+  server5:
+    build: ./server
+    container_name: matrix_server_5
+    ports:
+      - "5005:5000"
+      - "5682:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_ID=5
+
+  server6:
+    build: ./server
+    container_name: matrix_server_6
+    ports:
+      - "5006:5000"
+      - "5683:5678"
+    volumes:
+      - ./server:/app
+      - ./output:/app/output
+    environment:
+      - PYTHONUNBUFFERED=1
+      - SERVER_ID=6
 
   client:
     build: ./client
     container_name: matrix_client
     depends_on:
-      - server
+      - server1
+      - server2
+      - server3
+      - server4
+      - server5
+      - server6
     volumes:
       - ./client:/app
       - ./output:/app/output

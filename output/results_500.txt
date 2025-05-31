@@ -1,0 +1,4 @@
+Tamanho da matriz: 500x500
+Tempo serial: 59.7008 segundos
+Tempo distribuído: 59.6767 segundos
+Speedup: 1.0004x
